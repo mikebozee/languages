@@ -30,6 +30,8 @@ section#content {
 section.language {
 	width: 100%;
 	padding: 50px;
+	border-width: 3px 0 0 0;
+	border-style: solid;
 }
 	
 	section.language:nth-of-type(odd) {
@@ -77,22 +79,76 @@ section.language {
 		color: #375EAB;
 	}
 
+	section.language.csharp {
+		color: #9D4F82;
+	}
+
 
 
 /* Language Components
 =============================*/
 ul.language-components {
 	list-style: none;
-	margin: 30px 0 0 0;
+	margin: 20px 0 0 0;
 	padding: 0 0 0 50px;
 }
 
 	ul.language-components li {
-		display: block;
+		display: inline-block;
 		font-size: 18px;
 		font-weight: 600;
+		margin-top: 10px;
+		padding: 3px 10px;
+		border-radius: 30px;
+		line-height: 1;
+		border-width: 1px;
+		border-style: solid;
 	}
 
-	ul.language-components li:not(:first-of-type) {
-		margin-top: 10px;
+	ul.language-components li:not(:last-of-type) {
+		margin-right: 10px;
 	}
+
+	ul.language-components li:hover {
+		color: #fff;
+		cursor: pointer;
+	}
+
+		section.ruby li:hover {
+			background-color: #DF535B;
+		}
+
+		section.php li:hover {
+			background-color: #7D679C;
+		}
+
+		section.python li:hover {
+			background-color: #EE93B0;
+		}
+
+		section.javascript li:hover {
+			background-color: #C05A76;
+		}
+
+		section.databases li:hover {
+			background-color: #E97734;
+		}
+
+		section.java li:hover {
+			background-color: #329577;
+		}
+
+		section.go li:hover {
+			background-color: #375EAB;
+		}
+
+		section.csharp li:hover {
+			background-color: #9D4F82;
+		}
+
+
+
+
+
+
+
